@@ -1,0 +1,23 @@
+TRJCONV 
+
+gmx trjconv -f XTCFILE.xtc -s TPRFILE.tpr -ur compact -pbc mol -skip 100 -n index.ndx -o OUTPUT.pdb
+
+-f [<.xtc/.trr/…>] (traj.xtc)
+Trajectory: xtc trr cpt gro g96 pdb tng
+
+-s [<.tpr/.gro/…>] (topol.tpr) (Optional)
+Structure+mass(db): tpr gro g96 pdb brk ent
+
+-n [<.ndx>] (index.ndx) (Optional) Index file
+
+For 
+-ur compact -pbc mol
+
+-pbc <enum> (none)
+PBC treatment (see help text for full description): none, mol, res, atom, nojump, cluster, whole
+
+-ur <enum> (rect)
+Unit-cell representation: rect, tric, compact
+
+-skip 100 
+-o OUTPUT.pdb
