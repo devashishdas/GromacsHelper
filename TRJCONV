@@ -21,3 +21,9 @@ Unit-cell representation: rect, tric, compact
 
 -skip 100 
 -o OUTPUT.pdb
+
+---
+
+Hydrogen Bond:
+
+gmx_22 hbond -f step5_1.xtc -s step5_1.tpr 
